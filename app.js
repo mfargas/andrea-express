@@ -36,7 +36,6 @@ MongoClient.connect('mongodb://localhost:27017/animals', function (err, client) 
     client.close();
   });
 });
-import mongoose from 'mongoose';
 
 //Require Mongoose
 var mongoose = require('mongoose');
