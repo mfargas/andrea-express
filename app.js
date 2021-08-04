@@ -22,6 +22,32 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use(express.static('public'));
+app.use(express.static('media'));
+
+const MongoClient = require('mongodb').MongoClient;
+MongoClient.connect('mongodb://localhost:27017/animals', function (err, client) {
+  if (err) throw err;
+
+  let db = client.db('animals');
+  db.collection('mammals').find().toArray(function (err, result) {
+    if (err) throw err;
+    console.log(result);
+    client.close();
+  });
+});
+import mongoose from 'mongoose';
+
+//Require Mongoose
+var mongoose = require('mongoose');
+
+//Define a schema
+var Schema = mongoose.Schema;
+
+var SomeModelSchema = new Schema({
+  a_string: String,
+  a_date: Date
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
