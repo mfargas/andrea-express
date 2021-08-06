@@ -25,18 +25,25 @@ body header {
           flex-direction: row;
 }
 
-body header h1 {
-  font-family: "rama-gothic-m", sans-serif;
-  font-weight: 300;
-  font-size: 4rem;
-  width: 30%;
+body header a.logo {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+body header a.logo img {
+  width: 12rem;
+  margin: auto;
 }
 
 body header nav {
-  width: 70%;
-}
-
-body header nav ul {
+  position: relative;
+  width: inherit;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -44,25 +51,46 @@ body header nav ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+
+body header nav ul {
   width: 100%;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  display: inherit;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 body header nav ul li {
   list-style: none;
-  vertical-align: middle;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  font-weight: 800;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 body header nav ul li a {
-  color: aqua;
+  color: black;
 }
 
 body header nav ul li a:link {
+  text-decoration: none;
+}
+
+body header nav .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 0rem;
+  right: 0rem;
+}
+
+body header nav .social-icons a:link {
   text-decoration: none;
 }
 
@@ -74,8 +102,8 @@ body section.intro {
   text-align: center;
 }
 
-body section.intro .profile-image {
-  width: 20rem;
+body section.intro .intro-image {
+  width: 30rem;
   margin: auto;
 }
 

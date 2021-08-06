@@ -8,7 +8,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+var aboutRouter = require('./routes/about');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -21,24 +21,13 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
-app.use(express.static('public'));
-app.use(express.static('media'));
-
-const MongoClient = require('mongodb').MongoClient;
-MongoClient.connect('mongodb://localhost:27017/animals', function (err, client) {
-  if (err) throw err;
-
-  let db = client.db('animals');
-  db.collection('mammals').find().toArray(function (err, result) {
-    if (err) throw err;
-    console.log(result);
-    client.close();
-  });
-});
+app.use('/about-me', aboutRouter);
+app.use(express.static('./public/stylesheets'));
+app.use(express.static('./public/images'));
 
 //Require Mongoose
 var mongoose = require('mongoose');
+var helmet = require('helmet');
 
 //Define a schema
 var Schema = mongoose.Schema;
@@ -47,6 +36,7 @@ var SomeModelSchema = new Schema({
   a_string: String,
   a_date: Date
 });
+app.use(helmet());
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

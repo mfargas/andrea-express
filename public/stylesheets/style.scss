@@ -19,28 +19,45 @@ body{
         width: 100%;
         display: flex;
         flex-direction: row;
-        h1{
-            font-family: $logo-font;
-            font-weight: 300;
-            font-size: 4rem;
-            width: 30%;
+        a.logo{
+            width: max-content;
+            height: max-content;
+            img{
+                width: 12rem;
+                margin: auto;
+            }
         }
         nav{
-            width: 70%;
+            position: relative;
+            width: inherit;
+            justify-content: space-around;
+            display: flex;
+            flex-direction: row;
             ul{
-                display: flex;
-                flex-direction: row;
                 width: 100%;
-                justify-content: space-evenly;
+                display: inherit;
+                justify-content: flex-end;
                 li{
                     list-style: none;
-                    vertical-align: middle;
-                    align-items: center;
+                    font-weight: 800;
+                    align-self: center;
                     a{
-                        color: aqua;
+                        color: black;
                         &:link{
                             text-decoration: none;
                         }
+                    }
+                }
+            }
+            .social-icons{
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 0rem;
+                right: 0rem;
+                a{
+                    &:link{
+                        text-decoration: none;
                     }
                 }
             }
@@ -50,8 +67,8 @@ body{
         display: block;
         align-items: middle;
         text-align: center;
-        .profile-image{
-            width: 20rem;
+        .intro-image{
+            width: 30rem;
             margin: auto;
         }
         .intro-text{
