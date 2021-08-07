@@ -14,25 +14,28 @@ body{
     font-size: 16px;
     font-family: $body-font;
     font-weight: 300;
-    background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='32' height='32' patternTransform='scale(2) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0,0%,100%,1)'/><path d='M40 16h-6m-4 0h-6m8 8v-6m0-4V8M8 16H2m-4 0h-6m8 8v-6m0-4V8'  stroke-linejoin='round' stroke-linecap='round' stroke-width='0.5' stroke='hsla(66, 70%, 54%, 0.49)' fill='none'/><path d='M16-8v6m0 4v6m8-8h-6m-4 0H8m8 24v6m0 4v6m8-8h-6m-4 0H8'  stroke-linejoin='round' stroke-linecap='round' stroke-width='0.5' stroke='hsla(33, 90%, 65%, 0.49)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
+    background-color: white;
     header{
         width: 100%;
+        height: max-content;
         display: flex;
         flex-direction: row;
-        a.logo{
-            width: max-content;
-            height: max-content;
-            img{
-                width: 12rem;
-                margin: auto;
-            }
-        }
+        position: relative;
         nav{
-            position: relative;
+            position: fixed;
             width: inherit;
             justify-content: space-around;
             display: flex;
             flex-direction: row;
+            a.logo{
+                width: max-content;
+                height: max-content;
+                padding-left: 2rem;
+                img{
+                    width: 12rem;
+                    margin: auto;
+                }
+            }
             ul{
                 width: 100%;
                 display: inherit;
@@ -41,6 +44,7 @@ body{
                     list-style: none;
                     font-weight: 800;
                     align-self: center;
+                    padding-right: 2rem;
                     a{
                         color: black;
                         &:link{
@@ -49,15 +53,19 @@ body{
                     }
                 }
             }
-            .social-icons{
+            .social-icon{
                 display: flex;
                 flex-direction: column;
-                position: absolute;
-                top: 0rem;
-                right: 0rem;
-                a{
+                padding-right: 2rem;
+                a.linkedin-icon{
+                    width: max-content;
+                    height: max-content;
+                    margin: auto;
                     &:link{
                         text-decoration: none;
+                    }
+                    img{
+                        width: 4rem;
                     }
                 }
             }
@@ -79,10 +87,67 @@ body{
             }
         }
     }
+    section.skills-list{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        .skill{
+            width: 100%;
+            img{
+                max-width: 10rem;
+            }
+        }
+        ul{
+            list-style: none;
+            li{
+                list-style: none;
+            }
+        }
+    }
     section.highlights{
         h2{
             font-family: $logo-font;
             font-size: 2rem;
+            text-align: center;
+        }
+        .work-gallery{
+            padding: 1rem;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(1, 20rem);
+            grid-gap: 1rem;
+            .gallery__item{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    footer{
+        width: 100%;
+        .footer-logo{
+            width: max-content;
+            height: max-content;
+            img{
+                width: 8rem;
+            }
+        }
+        .lower-footer-sect{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            ul{
+                li{
+                    list-style: none;
+                }
+            }
+            form{
+                display: inherit;
+                flex-direction: column;
+            }
         }
     }
 }
