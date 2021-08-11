@@ -192,7 +192,7 @@ body section.highlights h2 {
   text-align: center;
 }
 
-body section.highlights .work-gallery {
+body section.highlights div.work-gallery {
   padding: 1rem;
   display: -ms-grid;
   display: grid;
@@ -201,13 +201,20 @@ body section.highlights .work-gallery {
   -ms-grid-rows: (20rem)[1];
       grid-template-rows: repeat(1, 20rem);
   grid-gap: 1rem;
+  max-height: 20rem;
 }
 
-body section.highlights .work-gallery .gallery__item {
+body section.highlights div.work-gallery figure.gallery__item {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+}
+
+body section.highlights div.work-gallery figure.gallery__item a {
+  height: 100%;
+}
+
+body section.highlights div.work-gallery figure.gallery__item a img {
+  height: 100%;
 }
 
 body footer {
