@@ -126,9 +126,16 @@ body section.intro {
 }
 
 body section.intro .intro-image {
-  width: 30rem;
+  width: 40%;
+  height: 100%;
   margin: auto;
-  padding-top: 3rem;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  aspect-ratio: 1 / 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-clip-path: url(#mask);
+          clip-path: url(#mask);
 }
 
 body section.intro .pattern-test {
@@ -204,16 +211,12 @@ body section.highlights div.work-gallery {
   max-height: 20rem;
 }
 
-body section.highlights div.work-gallery figure.gallery__item {
-  width: 100%;
+body section.highlights div.work-gallery a.gallery__item {
+  overflow: hidden;
   height: 100%;
 }
 
-body section.highlights div.work-gallery figure.gallery__item a {
-  height: 100%;
-}
-
-body section.highlights div.work-gallery figure.gallery__item a img {
+body section.highlights div.work-gallery a.gallery__item img {
   height: 100%;
 }
 

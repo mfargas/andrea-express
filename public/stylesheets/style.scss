@@ -84,9 +84,13 @@ body{
         align-items: middle;
         text-align: center;
         .intro-image{
-            width: 30rem;
+            width: 40%;
+            height: 100%;
             margin: auto;
-            padding-top: 3rem;
+            justify-self: center;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            clip-path: url(#mask);
         }
         .pattern-test{
             width: 20rem;
@@ -142,14 +146,11 @@ body{
             grid-template-rows: repeat(1, 20rem);
             grid-gap: 1rem;
             max-height: 20rem;
-            figure.gallery__item{
-                width: 100%;
+            a.gallery__item{
+                overflow: hidden;
                 height: 100%;
-                a{
+                img{
                     height: 100%;
-                    img{
-                        height: 100%;
-                    }
                 }
             }
         }
