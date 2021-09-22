@@ -1,0 +1,31 @@
+@import url("https://use.typekit.net/quc8gpf.css");
+
+.container{
+    margin: auto;
+    max-width: 1000px;
+    font-family: 'p22-underground', sans-serif;
+}
+
+.heading{
+    color: seagreen;
+}
+
+.navLinks{
+    list-style: none;
+    width: inherit;
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: row;
+}
+.navLinkItem {
+    padding-right: 2rem;
+    list-style: none;
+    font-weight: 800;
+    align-self: center;
+    padding-right: 2rem;
+}
+.navLinkText{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
