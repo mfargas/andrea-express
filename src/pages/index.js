@@ -5,6 +5,7 @@ export default function Home() {
     return( 
         <Layout pageTitle='Andrea Home'>
             <h1>Hello Gatsby!</h1>
+            <p>Andrea's page</p>
         </Layout>
         
     )
