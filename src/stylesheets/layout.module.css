@@ -10,6 +10,12 @@
     color: seagreen;
 }
 
+.logo {
+    width: 100%;
+    height: 3rem;
+    justify-self: center;
+}
+
 .navLinks{
     list-style: none;
     width: inherit;
