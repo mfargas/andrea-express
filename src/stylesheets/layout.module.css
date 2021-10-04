@@ -35,3 +35,52 @@
     text-decoration: none;
     color: black;
 }
+
+.introArch{
+    height: 100%;
+}
+
+.introImage{
+    width: 40%;
+    height: 100%;
+    margin: auto;
+    justify-self: center;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    clip-path: url(../images/Arch.svg);
+}
+
+.footerLogo {
+    max-width: 1rem;
+    max-height: 3rem;
+    justify-self: center;
+}
+
+.footerLinks{
+    list-style: none;
+    width: inherit;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+
+.footerLinkItem {
+    list-style: none;
+    font-weight: 800;
+    align-self: left;
+    padding-right: 2rem;
+}
+
+.footerLinkText{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}

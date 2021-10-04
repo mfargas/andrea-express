@@ -1,11 +1,14 @@
 import React from 'react'
 import Layout from '../components/layout'
+import HomeIntro from '../components/home-intro'
+import Gallery from '../components/gallery'
 
 export default function Home() {
     return( 
         <Layout pageTitle='Andrea Home'>
-            <h1>Hello Gatsby!</h1>
-            <p>Andrea's page</p>
+            <HomeIntro />
+            <h4>legal attorney's assistant</h4>
+            <Gallery />
         </Layout>
     )
 }

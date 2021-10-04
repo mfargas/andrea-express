@@ -10,9 +10,8 @@ const Layout = ({ pageTitle, children }) => {
             <Header />
             <main>
                 <h1 className={heading}>{pageTitle}</h1>
-                {children}
                 <article>
-                    <h3>Welcome again</h3>
+                    {children}
                 </article>
             </main>
             <Footer/>
