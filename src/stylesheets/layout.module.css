@@ -1,5 +1,9 @@
 @import url("https://use.typekit.net/quc8gpf.css");
 
+nav{
+    width: 100%;
+}
+
 .container{
     margin: auto;
     max-width: 1000px;
@@ -22,6 +26,7 @@
     justify-content: flex-end;
     display: flex;
     flex-direction: row;
+    color: #000;
 }
 .navLinkItem {
     padding-right: 2rem;
@@ -35,8 +40,13 @@
     text-decoration: none;
     color: black;
 }
+.socialIcon{
+    max-width: 3rem;
+    color: #000;
+}
 
 .introArch{
+    position: relative;
     height: 100%;
 }
 
@@ -48,6 +58,23 @@
     aspect-ratio: 1 / 1;
     object-fit: cover;
     clip-path: url(../images/Arch.svg);
+}
+
+.list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.skill{
+    width: 50%;
+    margin: auto;
+}
+
+.skillIcon{
+    max-width: 10rem;
 }
 
 .footerLogo {
