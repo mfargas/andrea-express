@@ -1,6 +1,6 @@
 @import url("https://use.typekit.net/quc8gpf.css");
 
-nav{
+.nav{
     width: 100%;
 }
 
@@ -106,7 +106,7 @@ nav{
 
 
 
-form{
+.form{
     display: flex;
     flex-direction: column;
     width: 50%;

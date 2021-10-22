@@ -3,6 +3,9 @@ import Layout from '../components/layout'
 import HomeIntro from '../components/home-intro'
 import SkillList from '../components/skillList'
 import Gallery from '../components/gallery'
+// import Amplify from 'aws-amplify'
+// import config from './aws-exports'
+// Amplify.configure(config)
 
 export default function Home() {
     return( 
