@@ -2,18 +2,19 @@ import * as React from 'react';
 import { Link } from 'gatsby';
 import EmailForm from './emailForm';
 import FooterLogo from '../images/SVG/name-logo.svg';
-import { footerLogo, footerLinks, footerLinkItem, footerLinkText } from '../stylesheets/layout.module.css';
+import * as styles from '../stylesheets/footer.module.css';
 
 const Footer = () => {
     return(
         <footer>
-            <Link to="/" className={footerLogo}>
-                <img src={FooterLogo} alt="small logo"></img>
-            </Link>
-            <div>
-                <ul className={footerLinks}>
-                    <li className={footerLinkItem}><Link to="/" className={footerLinkText}>Home</Link></li>
-                    <li className={footerLinkItem}><Link to="/about" className={footerLinkText}>About</Link></li>
+            <div className={styles.footer}>
+                <ul className={styles.footerLinks}>
+                    <li className={styles.footerLinkItem}>
+                        <Link to="/" className={styles.footerLogo}>
+                            <img src={FooterLogo} className={styles.logoImg_f} alt="small logo"></img>
+                        </Link>
+                    </li>
+                    <li className={styles.footerLinkItem}><Link to="/about" className={styles.footerLinkText}>About</Link></li>
                 </ul>
                 <EmailForm />
             </div>

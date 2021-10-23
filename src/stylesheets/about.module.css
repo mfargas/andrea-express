@@ -1,5 +1,20 @@
+.aboutLanding{
+    display: flex;
+    flex-direction: row;
+}
+
 .profileImage{
+    width: 35vw;
     max-width: 600px;
     justify-content: center;
     margin: auto;
+    border-radius: 300px;
+    border-color: greenyellow;
+    border-width: 1rem;
+}
+
+.aboutBio{
+    font-size: 2rem;
+    max-width: 500px;
+    text-align: right;
 }

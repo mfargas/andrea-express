@@ -1,0 +1,39 @@
+.footer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.footerLogo {
+    max-width: 15rem;
+    max-height: 15rem;
+    height: 12rem;
+    justify-self: center;
+
+}
+
+.logoImg_f{
+    width: 100%;
+}
+
+.footerLinks{
+    list-style: none;
+    width: max-content;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+
+.footerLinkItem {
+    width: max-content;
+    list-style: none;
+    font-weight: 800;
+    align-self: left;
+    padding-right: 2rem;
+}
+
+.footerLinkText{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
