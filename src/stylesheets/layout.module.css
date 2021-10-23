@@ -60,26 +60,9 @@
     clip-path: url(../images/Arch.svg);
 }
 
-.list{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-}
-
-.skill{
-    width: 50%;
-    margin: auto;
-}
-
-.skillIcon{
-    max-width: 10rem;
-}
-
 .footerLogo {
     max-width: 1rem;
-    max-height: 3rem;
+    max-height: 1rem;
     justify-self: center;
 }
 
@@ -102,12 +85,4 @@
     list-style: none;
     text-decoration: none;
     color: black;
-}
-
-
-
-.form{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
 }

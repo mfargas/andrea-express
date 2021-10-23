@@ -2,7 +2,7 @@ import * as React from 'react'
 import LegalPaper from '../images/legal-paper.svg'
 import Capitol from '../images/capitol.svg'
 import Certificate from '../images/certificate.svg'
-import * as styles from '../stylesheets/layout.module.css'
+import * as styles from '../stylesheets/skillList.module.css'
 
 const SkillList = () => {
     return(

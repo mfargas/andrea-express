@@ -1,0 +1,26 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+
+.text_input{
+    width: 75%;
+    margin: 1rem;
+    justify-self: flex-end;
+}
+
+.email_input{
+    width: 75%;
+    margin: 1rem;
+}
+
+.submit_btn{
+    margin: 1rem;
+    height: 2rem;
+    max-width: 5rem;
+    border-radius: 25px;
+    border-style: none;
+    background-color: greenyellow
+}

@@ -1,22 +1,17 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
-import Carecen from '../images/carecen-logo.svg'
-import HumanRF from '../images/hrf-org-logo.svg'
+import * as styles from '../stylesheets/gallery.module.css'
 
 const Gallery = () => {
     return(
-        <div>
-            <Link to="https://www.carecen-la.org/legal_services" className="gallery__item gal-1">
-                <img src={Carecen} alt="img 1"></img>
+        <div className={styles.gallery}>
+            <Link to="https://www.carecen-la.org/legal_services" className={styles.gallery__item_1}>
             </Link>
-            <Link to="https://www.humanrightsfirst.org/" className="gallery__item gal-2">
-                <img src={HumanRF} alt="img 2"></img>
+            <Link to="https://www.humanrightsfirst.org/" className={styles.gallery__item_2}>
             </Link>
-            <Link to="https://www.esperanza-la.org/" className="gallery__item gal-3">
-                <img src={Carecen} alt="img 1"></img>
+            <Link to="https://www.esperanza-la.org/" className={styles.gallery__item_3}>
             </Link>
-            <Link to="https://www.csulb.edu/student-affairs/panetta" className="gallery__item gal-4">
-                <img src={HumanRF} alt="img 2"></img>
+            <Link to="https://www.csulb.edu/student-affairs/panetta" className={styles.gallery__item_4}>
             </Link>
         </div>
     )
