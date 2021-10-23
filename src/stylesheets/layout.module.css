@@ -51,13 +51,13 @@
 }
 
 .introImage{
-    width: 40%;
-    height: 100%;
+    width: 50%;
+    height: 60%;
     margin: auto;
     justify-self: center;
     aspect-ratio: 1 / 1;
     object-fit: cover;
-    clip-path: url(../images/Arch.svg);
+    clip-path: M317,325.55h-.75a4.82,4.82,0,0,1,0-.77.38.38,0,0,1,.7,0A6.26,6.26,0,0,1,317,325.55Z;
 }
 
 .footerLogo {
