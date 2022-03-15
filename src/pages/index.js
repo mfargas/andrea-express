@@ -1,17 +1,16 @@
 import React from 'react'
-import Layout from '../components/layout'
-import HomeIntro from '../components/homeIntro'
-import SkillList from '../components/skillList'
-import Gallery from '../components/gallery'
+import Layout from '../components/Layout'
+import HomeIntro from '../components/HomeIntro'
+import SkillList from '../components/SkillList'
+import Gallery from '../components/Gallery'
 // import Amplify from 'aws-amplify'
 // import config from './aws-exports'
 // Amplify.configure(config)
 
 export default function Home() {
     return( 
-        <Layout>
+        <Layout pageTitle={Home}>
             <HomeIntro />
-            <h4>legal attorney's assistant</h4>
             <SkillList />
             <Gallery />
         </Layout>

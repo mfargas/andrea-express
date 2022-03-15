@@ -1,0 +1,38 @@
+
+.container{
+    width: 100%;
+}
+
+.homeIntro{
+    height: 75vh;
+    min-height: 75vh;
+    width: 100%;
+    display: flex;
+    background-color: grey;
+    background-blend-mode: screen;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../assets/images/congress-lawn.jpg");
+}
+
+h1{
+    font-size: 4rem;
+    margin: auto;
+    color: hsla(208, 66, 34, 1);
+}
+
+.introImage{
+    width: 50%;
+    height: 60%;
+    margin: auto;
+    justify-content: center;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    clip-path: url(#archClip);
+}
+
+.bio{
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+}

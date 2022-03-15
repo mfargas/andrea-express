@@ -6,29 +6,29 @@
 
 .gallery__item_1{
     width: 100%;
-    content: url(../images/carecen-logo.svg);
-    background-image: url(../images/carecen-logo.svg);
+    content: url(../assets/images/carecen-logo.svg);
+    background-image: url(../assets/images/carecen-logo.svg);
     background-size: cover;
 }
 
 .gallery__item_2{
     width: 100%;
     content-visibility: cover;
-    background-image: url(../images/hrf-org-logo.svg);
+    background-image: url(../assets/images/hrf-org-logo.svg);
     background-size: cover;
     background-position-y: center;
 }
 
 .gallery__item_3{
     width: 100%;
-    content: url(../images/carecen-logo.svg);
-    background-image: url(../images/carecen-logo.svg);
+    content: url(../assets/images/carecen-logo.svg);
+    background-image: url(../assets/images/carecen-logo.svg);
     background-size: cover;
 }
 
 .gallery__item_4{
     width: 100%;
-    content: url(../images/carecen-logo.svg);
-    background-image: url(../images/carecen-logo.svg);
+    content: url(../assets/images/carecen-logo.svg);
+    background-image: url(../assets/images/carecen-logo.svg);
     background-size: cover;
 }

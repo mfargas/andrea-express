@@ -1,48 +1,87 @@
 @import url("https://use.typekit.net/quc8gpf.css");
+/* Color Theme Swatches in Hex
+BERRY           #A64D79     hsla(330, 36, 47, 1)
+PINK            #ECD2FA     hsla(279, 80, 90, 1)
+DARK NAVY       #0D2740     hsla(209, 66, 15, 1)
+NAVY            #1E5B94     hsla(208, 66, 34, 1)
+BB BLUE         #E9F4FF     hsla(209, 100, 95, 1)
+OFF WHITE       #F2F2F2     hsla(0, 0, 94, 1)
+*/
 
-.nav{
-    width: 100%;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 .container{
     margin: auto;
-    max-width: 1000px;
-    font-family: 'p22-underground', sans-serif;
+    width: 100%;
+    font-family: kings-caslon, sans-serif;
+    font-style: normal;
+    font-size: 18px;
+}
+
+h1, h2, h3, h4{
+    font-family: rama-gothic-m, sans-serif;
+}
+
+h1{
+    font-weight: 700;
+    font-style: normal;
+}
+h2{
+    font-weight: 600;
+    font-style: normal;
+}
+h3{
+    font-weight: 400;
+    font-style: normal;
+}
+h4{
+    font-weight: 300;
+    font-style: normal;
 }
 
 .heading{
     color: seagreen;
 }
 
-.logo {
+nav{
     width: 100%;
-    height: 3rem;
+    height: 5rem;
+    z-index: 25;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    position: fixed;
+}
+
+.logo{
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    max-height: 4rem;
     justify-self: center;
 }
 
-.navLinks{
-    list-style: none;
-    width: inherit;
-    justify-content: flex-end;
-    display: flex;
-    flex-direction: row;
-    color: #000;
-}
-.navLinkItem {
-    padding-right: 2rem;
-    list-style: none;
-    font-weight: 800;
-    align-self: center;
-    padding-right: 2rem;
-}
 .navLinkText{
     list-style: none;
     text-decoration: none;
-    color: black;
+    color: hsla(209, 100, 95, 1);
+    font-family: rama-gothic-m, sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    align-self: center;
+    padding: 0 2rem;
 }
-.socialIcon{
-    max-width: 3rem;
-    color: #000;
+
+.navLinkText::visited{
+    color: hsla(209, 100, 95, 1);
+}
+
+.activeLink{
+    color: hsla(279, 80, 90, 1);
 }
 
 .introArch{
@@ -50,12 +89,6 @@
     height: 100%;
 }
 
-.introImage{
-    width: 50%;
-    height: 60%;
-    margin: auto;
-    justify-content: center;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    clip-path: url(#archClip);
+.pageTitle{
+    color: plum;
 }

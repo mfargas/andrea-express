@@ -1,15 +1,15 @@
 import * as React from 'react'
-import Header from './header'
-import Footer from './footer'
-import { container, heading } from "../stylesheets/layout.module.css"
+import Header from './Header'
+import Footer from './Footer'
+import * as styles from "../stylesheets/layout.module.css"
 
 const Layout = ({ pageTitle, children }) => {
     return (
-        <div className={container}>
-            <title className={heading}>{pageTitle}</title>
+        <div className={styles.container}>
+            <title className={styles.heading}>{pageTitle}</title>
             <Header />
             <main>
-                <h1 className={heading}>{pageTitle}</h1>
+                <h1 className={styles.heading}>{pageTitle}</h1>
                 <article>
                     {children}
                 </article>

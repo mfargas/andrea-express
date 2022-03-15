@@ -1,7 +1,7 @@
 import React from 'react'
-import Layout from '../components/layout'
-import SkillList from '../components/skillList'
-import AndreaProfile from '../images/profile-image.png'
+import Layout from '../components/Layout'
+import SkillList from '../components/SkillList'
+import AndreaProfile from '../assets/images/profile-image.png'
 import * as styles from '../stylesheets/about.module.css'
 
 export default function About() {
