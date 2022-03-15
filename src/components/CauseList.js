@@ -3,7 +3,7 @@ import * as styles from '../stylesheets/causes.module.css'
 
 const CauseList = () => {
     return (
-        <CauseList className={styles.list}>
+        <section className={styles.list}>
             <div className={styles.cause}>
                 <h3>Legal Assistant Experience</h3>
             </div>
@@ -13,7 +13,7 @@ const CauseList = () => {
             <div className={styles.cause}>
                 <h3>B.A. Women & Gender Studies</h3>
             </div>
-        </CauseList>
+        </section>
     )
 }
 

@@ -1,27 +1,20 @@
 import React from 'react'
 import Layout from '../components/Layout'
+import Biography from '../components/Biography'
 import SkillList from '../components/SkillList'
-import AndreaProfile from '../assets/images/profile-image.png'
+import StatueImg from '../assets/images/justice-statue.jpg'
 import * as styles from '../stylesheets/about.module.css'
 
 export default function About() {
+    const style = {flexDirection: "row"};
     return (
-        <Layout >
-            <section className={styles.aboutLanding}>
-                <img src={AndreaProfile} alt="andrea-profile" className={styles.profileImage} />
-                <div>
-                <p className={styles.aboutBio}>Andrea Garcia is an attorney assistant at law, ready to help
-                    her clients and her community. She is a resource to Los Angeles
-                    locals.
-                </p>
-                <p className={styles.aboutBio}> With an insight into the inner workings of Washington D.C.
-                    Congressional Law, a Bachelor Degree from California State University,
-                    Long Beach, and experience assisting local attorneys, Andrea
-                    can help you with your next case.
-                </p>
-                </div>
+        <Layout pageTitle={About}>
+            <section className={styles.landing}>
+                <h1>About Andrea</h1>
+                <img src={StatueImg} alt='Statue of woman holding scale' />
             </section>
-            <SkillList />
+            <Biography />
+            <SkillList style={style} />
         </Layout>
     )
 }

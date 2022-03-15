@@ -1,14 +1,19 @@
 .gallery{
     display: grid;
+    margin: 1rem 1rem;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 45vh 45vh;
     gap: 1rem;
+
 }
 
 .gallery__item_1{
     width: 100%;
-    content: url(../assets/images/carecen-logo.svg);
-    background-image: url(../assets/images/carecen-logo.svg);
-    background-size: cover;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-image: url(../assets/images/esperanza-logo.jpeg);
+    background-size: contain;
+    background-position: center center;
 }
 
 .gallery__item_2{
@@ -16,19 +21,47 @@
     content-visibility: cover;
     background-image: url(../assets/images/hrf-org-logo.svg);
     background-size: cover;
-    background-position-y: center;
+    background-position: center bottom;
 }
 
 .gallery__item_3{
     width: 100%;
-    content: url(../assets/images/carecen-logo.svg);
     background-image: url(../assets/images/carecen-logo.svg);
     background-size: cover;
+    background-position: center center;
 }
 
 .gallery__item_4{
     width: 100%;
-    content: url(../assets/images/carecen-logo.svg);
-    background-image: url(../assets/images/carecen-logo.svg);
+    background-image: url(../assets/images/lb-logo.png);
     background-size: cover;
+    background-color: hsl(36, 100%, 90%);
+    background-position: center center;
+}
+
+.gallery__item_1:hover{
+    background-blend-mode: screen;
+    background-color: rgb(37, 36, 36);
+}
+
+.gallery__item_2:hover{
+    background-blend-mode: screen;
+    background-color: grey;
+}
+
+.gallery__item_3:hover{
+    background-blend-mode: screen;
+    background-color: rgb(65, 64, 64);
+}
+
+.gallery__item_4:hover{
+    background-blend-mode: screen;
+    background-color: grey;
+}
+
+@media screen and (max-width: 775px) {
+    .gallery{
+        grid-template-columns: 1fr;
+        grid-template-rows: 40vh 40vh 40vh 40vh;
+    }
 }
