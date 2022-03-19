@@ -14,7 +14,7 @@ const HomeIntro = () => {
                 <h2>Legal Attorney Assistant For Amazon</h2>
                 <RiAmazonFill />
                 <StaticImage
-                    src="../assets/andrea-congress.png"
+                    src="../assets/images/andrea-congress.png"
                     alt="andrea profile picture"
                     width={100}
                     height={300}
