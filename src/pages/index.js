@@ -11,10 +11,20 @@ import Seo from '../components/Seo'
 export default function Home() {
     return( 
         <Layout pageTitle={Home}>
-            <Seo title='Home' />
+            <Seo title={Home} author={Marjoree} />
             <HomeIntro />
             <SkillList />
             <Gallery />
         </Layout>
     )
 }
+
+export const query = graphql`
+    query {
+        site {
+        siteMetadata {
+            title
+            description
+            author
+        }
+    }`

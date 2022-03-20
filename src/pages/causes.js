@@ -8,7 +8,7 @@ import * as styles from '../stylesheets/causes.module.css'
 export default function Causes() {
     return (
         <Layout pageTitle={Causes}>
-            <Seo title='Causes' />
+            <Seo title={Causes} author={Marjoree} />
             <section className={styles.causesLanding}>
                 <h2> Causes to Follow </h2>
             </section>
@@ -16,3 +16,13 @@ export default function Causes() {
         </Layout>
     )
 }
+
+export const query = graphql`
+    query {
+        site {
+        siteMetadata {
+            title
+            description
+            author
+        }
+    }`
