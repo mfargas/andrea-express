@@ -21,14 +21,13 @@ h1{
     color: hsla(208, 66, 34, 1);
 }
 
-.introImage{
-    width: 50%;
-    height: 60%;
+/* main image of client */
+.profile{
+    max-height: 700px;
+    max-width: 500px;
     margin: auto;
     justify-content: center;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    clip-path: url(#archClip);
+    aspect-ratio: 1/2;
 }
 
 .bio{
@@ -36,6 +35,7 @@ h1{
     flex-direction: column;
     padding: 0 2rem;
     margin: auto;
+    min-height: 100vh;
     width: 60%;
     text-align: center;
     font-size: 1.5rem;

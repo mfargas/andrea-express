@@ -16,11 +16,19 @@
     color: #A64D79;
 }
 
-.landing > img{
+.statue{
+    height: 45vh;
+    width: auto;
     filter: drop-shadow(20px -20px 0 #A64D79);
-    height: 40vh;
     margin: 1rem auto;
+    aspect-ratio: 2/3;
 }
+
+/* .statueImg{
+    filter: drop-shadow(20px -20px 0 #A64D79);
+    margin: 1rem auto;
+    aspect-ratio: 2/3;
+} */
 
 .aboutLanding{
     display: grid;
@@ -31,16 +39,21 @@
 .profileImage{
     height: 40vh;
     max-width: 500px;
-    justify-content: center;
-    margin: auto;
-    border-color: greenyellow;
-    border-width: 1rem;
+    margin: 1rem auto;
+    aspect-ratio: 3/4;
     filter: drop-shadow(-30px -30px 0 #A64D79);
 }
 
 .aboutBio{
     font-size: 2rem;
     max-width: 500px;
-    text-align: right;
-    font-family: kings-caslon, sans-serif;
+    text-align: center;
+    margin: auto;
+}
+
+@media screen and (max-width: 750px) {
+    .aboutLanding{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
 }
