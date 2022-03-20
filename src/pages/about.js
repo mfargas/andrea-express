@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from '../components/Layout'
+import Seo from '../components/Seo'
 import Biography from '../components/Biography'
 import SkillList from '../components/SkillList'
 import EmailForm from '../components/emailForm'
@@ -10,6 +11,7 @@ export default function About() {
     const style = {flexDirection: "row", justifyContent: "center"};
     return (
         <Layout pageTitle={About}>
+            <Seo title='About' />
             <section className={styles.landing}>
                 <h1>About Andrea</h1>
                 <StaticImage 

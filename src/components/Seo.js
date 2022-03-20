@@ -13,16 +13,15 @@ import { useStaticQuery, graphql } from "gatsby"
 function Seo({ description, lang, meta, title }) {
     const { site } = useStaticQuery(
         graphql`
-    query {
-        site {
-            siteMetadata {
-                title
-                description
-                author
+            query {
+                site {
+                siteMetadata {
+                    title
+                    description
+                    author
+                }
             }
-        }
-    }
-    `
+        }`
     )
 
     const metaDescription = description || site.siteMetadata.description
@@ -77,6 +76,8 @@ Seo.defaultProps = {
     lang: `en`,
     meta: [],
     description: ``,
+    title: ``,
+    author: `Marjoree E. F.`
 }
 
 Seo.propTypes = {
@@ -84,6 +85,7 @@ Seo.propTypes = {
     lang: PropTypes.string,
     meta: PropTypes.arrayOf(PropTypes.object),
     title: PropTypes.string.isRequired,
+    author: PropTypes.string
 }
 
 export default Seo

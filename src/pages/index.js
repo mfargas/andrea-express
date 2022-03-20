@@ -3,6 +3,7 @@ import Layout from '../components/Layout'
 import HomeIntro from '../components/HomeIntro'
 import SkillList from '../components/SkillList'
 import Gallery from '../components/Gallery'
+import Seo from '../components/Seo'
 // import Amplify from 'aws-amplify'
 // import config from './aws-exports'
 // Amplify.configure(config)
@@ -10,6 +11,7 @@ import Gallery from '../components/Gallery'
 export default function Home() {
     return( 
         <Layout pageTitle={Home}>
+            <Seo title='Home' />
             <HomeIntro />
             <SkillList />
             <Gallery />
