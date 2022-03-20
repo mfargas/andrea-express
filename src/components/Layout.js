@@ -6,13 +6,15 @@ import * as styles from "../stylesheets/layout.module.css"
 
 const Layout = ({ pageTitle, children }) => {
     const data = useStaticQuery(graphql`
-        query MyQuery{
-            site{
-                siteMetadata{
-                    title
+        query {
+                site {
+                    siteMetadata {
+                        title
+                        description
+                        author
+                    }
                 }
             }
-        }
     `)
 
     return (

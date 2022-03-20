@@ -15,15 +15,15 @@ function Seo({ description, lang, meta, title, author }) {
         graphql`
             query {
                 site {
-                siteMetadata {
-                    title
-                    description
-                    author
+                    siteMetadata {
+                        title
+                        description
+                        author
+                    }
                 }
             }
-        }
-        `
-    )
+            `
+        )
 
     const metaDescription = description || site.siteMetadata.description
     const defaultTitle = site.siteMetadata?.title
