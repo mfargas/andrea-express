@@ -17,7 +17,6 @@ export default function About() {
                     alt='Statue of woman holding scale'
                     layout='constrained'
                     className={styles.statue}
-                    imgClassName={styles.statueImg}
                 />
             </section>
             <Biography />
