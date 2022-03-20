@@ -21,7 +21,8 @@ function Seo({ description, lang, meta, title, author }) {
                     author
                 }
             }
-        }`
+        }
+        `
     )
 
     const metaDescription = description || site.siteMetadata.description

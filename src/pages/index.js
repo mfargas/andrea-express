@@ -1,4 +1,5 @@
 import React from 'react'
+import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import HomeIntro from '../components/HomeIntro'
 import SkillList from '../components/SkillList'
@@ -11,7 +12,7 @@ import Seo from '../components/Seo'
 export default function Home() {
     return( 
         <Layout pageTitle={Home}>
-            <Seo title={Home} author={Marjoree} />
+            <Seo title='Home' author='Marjoree E. F.' />
             <HomeIntro />
             <SkillList />
             <Gallery />
@@ -22,9 +23,11 @@ export default function Home() {
 export const query = graphql`
     query {
         site {
-        siteMetadata {
-            title
-            description
-            author
+            siteMetadata {
+                title
+                description
+                author
+            }
         }
-    }`
+    }
+    `
