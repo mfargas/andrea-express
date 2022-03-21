@@ -3,9 +3,10 @@ import {IoDocumentTextSharp} from 'react-icons/io5'
 import {GiDiploma, GiCongress} from 'react-icons/gi'
 import * as styles from '../stylesheets/skillList.module.css'
 
-const SkillList = (props) => {
+const SkillList = () => {
     return(
-        <section style={props.style} className={styles.list}>
+        <section className={styles.list}>
+            
             <div className={styles.skill}>
                 <h3>Legal Assistant Experience</h3>
                 <IoDocumentTextSharp className={styles.skillIcon} alt="legal-doc" />

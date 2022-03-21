@@ -1,20 +1,20 @@
 import * as React from 'react'
 import Header from './Header'
 import Footer from './Footer'
-import { StaticQuery, graphql, useStaticQuery } from 'gatsby'
+import { graphql, useStaticQuery } from 'gatsby'
 import * as styles from "../stylesheets/layout.module.css"
 
 const Layout = ({ pageTitle, children }) => {
     const data = useStaticQuery(graphql`
         query {
-                site {
-                    siteMetadata {
-                        title
-                        description
-                        author
-                    }
+            site {
+                siteMetadata {
+                    title
+                    description
+                    author
                 }
             }
+        }
     `)
 
     return (
@@ -22,7 +22,7 @@ const Layout = ({ pageTitle, children }) => {
             <title className={styles.heading}>{pageTitle} | {data.site.siteMetadata.title}</title>
             <Header />
             <main>
-                <h1 className={styles.heading}>{data.siteMetadata.title}</h1>
+                <h1 className={styles.heading}>{data.site.siteMetadata.title}</h1>
                 <article>
                     {children}
                 </article>
