@@ -8,7 +8,7 @@ import * as styles from '../stylesheets/causes.module.css'
 
 export default function Causes() {
     return (
-        <Layout pageTitle={Causes}>
+        <Layout pageTitle={Causes} >
             <Seo title='Causes' author='Marjoree E. F.' />
             <section className={styles.causesLanding}>
                 <h2> Causes to Follow </h2>
