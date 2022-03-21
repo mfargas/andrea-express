@@ -22,7 +22,6 @@ const Layout = ({ pageTitle, children }) => {
             <title className={styles.heading}>{pageTitle} | {data.site.siteMetadata.title}</title>
             <Header />
             <main>
-                <h1 className={styles.heading}>{data.site.siteMetadata.title}</h1>
                 <article>
                     {children}
                 </article>

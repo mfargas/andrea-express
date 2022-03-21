@@ -13,7 +13,7 @@ const Header = () => {
             <div>
                 <Link to="/" className={styles.navLinkText} activeClassName={styles.activeLink}>Home</Link>
                 <Link to="/about" className={styles.navLinkText} activeClassName={styles.activeLink}>About</Link>
-                <Link to="/contact" className={styles.navLinkText} activeClassName={styles.activeLink}>Contact</Link>
+                <Link to="/causes" className={styles.navLinkText} activeClassName={styles.activeLink}>Causes to Follow</Link>
             </div>
         </nav>
     )
