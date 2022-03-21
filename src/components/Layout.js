@@ -11,7 +11,6 @@ const Layout = ({ pageTitle, author, description, children }) => {
                 siteMetadata {
                     title
                     description
-                    author
                 }
             }
         }

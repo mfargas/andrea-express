@@ -11,8 +11,8 @@ import Seo from '../components/Seo'
 
 export default function Home({data}) {
     return( 
-        <Layout pageTitle={Home} author='Marjoree' description='home'>
-            <Seo title='Home' author='Marjoree E. F.' />
+        <Layout pageTitle={Home} >
+            <Seo title='Home'  />
             <HomeIntro />
             <SkillList />
             <Gallery />
@@ -26,7 +26,6 @@ export const query = graphql`
             siteMetadata {
                 title
                 description
-                author
             }
         }
     }

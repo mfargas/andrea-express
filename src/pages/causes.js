@@ -9,7 +9,7 @@ import * as styles from '../stylesheets/causes.module.css'
 export default function Causes({ data }) {
     return (
         <Layout pageTitle={Causes} >
-            <Seo title='Causes' author='Marjoree E. F.' />
+            <Seo title='Causes' />
             <section className={styles.causesLanding}>
                 <h2> Causes to Follow </h2>
             </section>
@@ -24,7 +24,6 @@ export const query = graphql`
             siteMetadata {
                 title
                 description
-                author
             }
         }
     }

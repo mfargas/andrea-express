@@ -12,7 +12,7 @@ export default function About({ data }) {
     const style = {flexDirection: "row", justifyContent: "center"};
     return (
         <Layout pageTitle={About}>
-            <Seo title='About' author='Marjoree ' />
+            <Seo title='About' />
             <section className={styles.landing}>
                 <h1>About Andrea</h1>
                 <StaticImage 
@@ -35,7 +35,6 @@ export const query = graphql`
             siteMetadata {
                 title
                 description
-                author
             }
         }
     }
