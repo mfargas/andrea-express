@@ -8,7 +8,7 @@ import EmailForm from '../components/emailForm'
 import * as styles from '../stylesheets/about.module.css'
 import { StaticImage } from 'gatsby-plugin-image'
 
-export default function About() {
+export default function About({ data }) {
     const style = {flexDirection: "row", justifyContent: "center"};
     return (
         <Layout pageTitle={About}>

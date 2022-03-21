@@ -9,7 +9,7 @@ import Seo from '../components/Seo'
 // import config from './aws-exports'
 // Amplify.configure(config)
 
-export default function Home() {
+export default function Home({data}) {
     return( 
         <Layout pageTitle={Home} author='Marjoree' description='home'>
             <Seo title='Home' author='Marjoree E. F.' />
