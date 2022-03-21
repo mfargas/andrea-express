@@ -11,7 +11,7 @@ import Seo from '../components/Seo'
 
 export default function Home() {
     return( 
-        <Layout pageTitle={Home}>
+        <Layout pageTitle={Home} author='Marjoree' description='home'>
             <Seo title='Home' author='Marjoree E. F.' />
             <HomeIntro />
             <SkillList />
