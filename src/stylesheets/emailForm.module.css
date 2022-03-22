@@ -1,54 +1,26 @@
 .form{
     display: flex;
     flex-direction: column;
-    width: 60%;
-    max-width: 28rem;
+    width: 50%;
     margin: auto;
-    font-family: kings-caslon, sans-serif;
 }
 
-.textInput{
+.text_input{
+    width: 75%;
+    margin: 1rem;
     justify-self: flex-end;
 }
 
-.textInput,
-.emailInput{
+.email_input{
     width: 75%;
     margin: 1rem;
-    height: 1.5rem;
-    line-height: 1rem;
-    border-color:  hsl(208, 66%, 34%);
-    border-radius: 20px;
-    border-width: 1px;
-    padding: 5px 10px;
 }
 
-.textArea{
-    border-color:  hsl(208, 66%, 34%);
-    border-radius: 20px;
-    padding: 10px;
-}
-
-.textInput:focus,
-.emailInput:focus,
-.textArea:focus{
-    outline: 1px;
-    outline-color: green;
-    color:  hsl(208, 66%, 34%);
-}
-
-.submitBtn{
+.submit_btn{
     margin: 1rem;
     height: 2rem;
     max-width: 5rem;
     border-radius: 25px;
     border-style: none;
-    color: hsl(209, 100%, 95%);
-    background-color: hsl(330, 36%, 47%);
-}
-
-.submitBtn:hover{
-    cursor: pointer;
-    color: hsl(330, 36%, 47%);
-    background-color: hsl(279, 80%, 90%);
+    background-color: greenyellow
 }

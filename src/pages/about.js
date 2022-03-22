@@ -1,41 +1,27 @@
 import React from 'react'
-import { graphql } from 'gatsby'
-import Layout from '../components/Layout'
-import Seo from '../components/Seo'
-import Biography from '../components/Biography'
-import SkillList from '../components/SkillList'
-import EmailForm from '../components/emailForm'
+import Layout from '../components/layout'
+import SkillList from '../components/skillList'
+import AndreaProfile from '../images/profile-image.png'
 import * as styles from '../stylesheets/about.module.css'
-import { StaticImage } from 'gatsby-plugin-image'
 
-export default function About({ data }) {
-    const style = {flexDirection: "row", justifyContent: "center"};
+export default function About() {
     return (
-        <Layout pageTitle={About}>
-            <Seo title='About' />
-            <section className={styles.landing}>
-                <h1>About Andrea</h1>
-                <StaticImage 
-                    src='../assets/images/justice-statue.jpg'
-                    alt='Statue of woman holding scale'
-                    layout='constrained'
-                    className={styles.statue}
-                />
+        <Layout >
+            <section className={styles.aboutLanding}>
+                <img src={AndreaProfile} alt="andrea-profile" className={styles.profileImage} />
+                <div>
+                <p className={styles.aboutBio}>Andrea Garcia is an attorney assistant at law, ready to help
+                    her clients and her community. She is a resource to Los Angeles
+                    locals.
+                </p>
+                <p className={styles.aboutBio}> With an insight into the inner workings of Washington D.C.
+                    Congressional Law, a Bachelor Degree from California State University,
+                    Long Beach, and experience assisting local attorneys, Andrea
+                    can help you with your next case.
+                </p>
+                </div>
             </section>
-            <Biography />
-            <SkillList style={style} />
-            <EmailForm />
+            <SkillList />
         </Layout>
     )
 }
-
-export const query = graphql`
-    query {
-        site {
-            siteMetadata {
-                title
-                description
-            }
-        }
-    }
-    `
