@@ -61,10 +61,10 @@ const Header = () => {
             </Link>
             {nav ? 
                 <NavButton showNav={showNav} onClick={handleClick} open>
-                    <GiHamburgerMenu className={styles.burger} open />
+                    <BurgerButton className={styles.burger} open />
                 </NavButton> : 
                 <NavButton showNav={showNav} onClick={handleClick}>
-                    <GiHamburgerMenu className={styles.burger}/>
+                    <BurgerButton className={styles.burger}/>
                 </NavButton> }
             {
                 nav ? <Navigation open><NavLinks className={styles.navItemsOpen} nav={nav} /></Navigation> 
