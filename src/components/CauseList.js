@@ -1,11 +1,17 @@
 import * as React from 'react'
 import * as styles from '../stylesheets/causes.module.css'
 
+
+
 const CauseList = () => {
     return (
         <section className={styles.list}>
             <div className={styles.cause}>
                 <h3>Legal Assistant Experience</h3>
+                <p>prior experience includes:</p>
+                <ul>
+                    <li>Congressional intern for Kamala Harris</li>
+                </ul>
             </div>
             <div className={styles.cause}>
                 <h3>Congressional Intern Experience</h3>
