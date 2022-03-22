@@ -1,11 +1,19 @@
 import * as React from 'react'
-import CongressImg from '../images/congress.jpg'
-import * as styles from '../stylesheets/layout.module.css'
+import * as styles from '../stylesheets/homeIntro.module.css'
+import { StaticImage } from "gatsby-plugin-image"
+import { RiAmazonFill } from "react-icons/ri";
 
 const HomeIntro = () => {
     return(
-        <div style={{display: `flex`,  justifyContent: `center`}}>
-            <img src={CongressImg} alt="andrea-profile" className={styles.introImage}  ></img>
+        <div className={styles.container}>
+            <div className={styles.homeIntro} >
+                <h1>Actively helping our communities</h1>
+            </div>
+            <div className={styles.bio}>
+                <h2>legal attorney's assistant</h2>
+                <StaticImage src='../assets/images/andrea-congress.png' alt="andrea at the capitol"/>
+                <RiAmazonFill />
+            </div>
         </div>
     )
 }

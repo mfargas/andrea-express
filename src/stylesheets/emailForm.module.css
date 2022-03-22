@@ -1,26 +1,54 @@
 .form{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 60%;
+    max-width: 28rem;
     margin: auto;
+    font-family: kings-caslon, sans-serif;
 }
 
-.text_input{
-    width: 75%;
-    margin: 1rem;
+.textInput{
     justify-self: flex-end;
 }
 
-.email_input{
+.textInput,
+.emailInput{
     width: 75%;
     margin: 1rem;
+    height: 1.5rem;
+    line-height: 1rem;
+    border-color:  hsl(208, 66%, 34%);
+    border-radius: 20px;
+    border-width: 1px;
+    padding: 5px 10px;
 }
 
-.submit_btn{
+.textArea{
+    border-color:  hsl(208, 66%, 34%);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.textInput:focus,
+.emailInput:focus,
+.textArea:focus{
+    outline: 1px;
+    outline-color: green;
+    color:  hsl(208, 66%, 34%);
+}
+
+.submitBtn{
     margin: 1rem;
     height: 2rem;
     max-width: 5rem;
     border-radius: 25px;
     border-style: none;
-    background-color: greenyellow
+    color: hsl(209, 100%, 95%);
+    background-color: hsl(330, 36%, 47%);
+}
+
+.submitBtn:hover{
+    cursor: pointer;
+    color: hsl(330, 36%, 47%);
+    background-color: hsl(279, 80%, 90%);
 }

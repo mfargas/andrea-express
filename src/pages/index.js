@@ -1,19 +1,32 @@
 import React from 'react'
-import Layout from '../components/layout'
-import HomeIntro from '../components/homeIntro'
-import SkillList from '../components/skillList'
-import Gallery from '../components/gallery'
+import { graphql } from 'gatsby'
+import Layout from '../components/Layout'
+import HomeIntro from '../components/HomeIntro'
+import SkillList from '../components/SkillList'
+import Gallery from '../components/Gallery'
+import Seo from '../components/Seo'
 // import Amplify from 'aws-amplify'
 // import config from './aws-exports'
 // Amplify.configure(config)
 
-export default function Home() {
+export default function Home({data}) {
     return( 
-        <Layout>
+        <Layout pageTitle={Home} >
+            <Seo title='Home'  />
             <HomeIntro />
-            <h4>legal attorney's assistant</h4>
             <SkillList />
             <Gallery />
         </Layout>
     )
 }
+
+export const query = graphql`
+    query {
+        site {
+            siteMetadata {
+                title
+                description
+            }
+        }
+    }
+    `

@@ -1,25 +1,26 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
-import EmailForm from './emailForm';
-import FooterLogo from '../images/SVG/name-logo.svg';
+import { StaticImage } from 'gatsby-plugin-image';
+// import EmailForm from './emailForm';
 import * as styles from '../stylesheets/footer.module.css';
 
 const Footer = () => {
     return(
-        <footer>
+        <>
             <div className={styles.footer}>
                 <ul className={styles.footerLinks}>
                     <li className={styles.footerLinkItem}>
                         <Link to="/" className={styles.footerLogo}>
-                            <img src={FooterLogo} className={styles.logoImg_f} alt="small logo"></img>
+                            <StaticImage className={styles.logo} src='../assets/images/andrea-logo.png' alt="small logo"/>
                         </Link>
                     </li>
                     <li className={styles.footerLinkItem}><Link to="/about" className={styles.footerLinkText}>About</Link></li>
+                    <li className={styles.footerLinkItem}><Link to="/causes" className={styles.footerLinkText}>Causes</Link></li>
                 </ul>
-                <EmailForm />
+                {/* <EmailForm /> */}
+                <p className={styles.copyright} >&copy; {new Date().getFullYear().toString()}{" "} Developed by Marjoree E. F. using <Link to="https://www.gatsbyjs.com/">Gatsby</Link></p>
             </div>
-            <p>Site developed by Marjoree E. F. &copy; {new Date().getFullYear().toString()}{" "}</p>
-        </footer>
+        </>
     )
 }
 

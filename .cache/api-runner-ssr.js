@@ -1,4 +1,20 @@
-var plugins = []
+var plugins = [{
+      name: 'gatsby-plugin-react-helmet',
+      plugin: require('/Users/marjoreefargas/Documents/GitHub/andrea-express/node_modules/gatsby-plugin-react-helmet/gatsby-ssr.js'),
+      options: {"plugins":[]},
+    },{
+      name: 'gatsby-plugin-image',
+      plugin: require('/Users/marjoreefargas/Documents/GitHub/andrea-express/node_modules/gatsby-plugin-image/gatsby-ssr.js'),
+      options: {"plugins":[]},
+    },{
+      name: 'gatsby-plugin-manifest',
+      plugin: require('/Users/marjoreefargas/Documents/GitHub/andrea-express/node_modules/gatsby-plugin-manifest/gatsby-ssr.js'),
+      options: {"plugins":[],"name":"gatsby-starter-default","short_name":"starter","start_url":"/","background_color":"#060864","display":"minimal-ui","icon":"src/assets/images/faveicon.png","legacy":true,"theme_color_in_head":true,"cache_busting_mode":"query","crossOrigin":"anonymous","include_favicon":true,"cacheDigest":"8d9b1b3444c86835236da0bda9dbbd19"},
+    },{
+      name: 'gatsby-plugin-styled-components',
+      plugin: require('/Users/marjoreefargas/Documents/GitHub/andrea-express/node_modules/gatsby-plugin-styled-components/gatsby-ssr.js'),
+      options: {"plugins":[],"displayName":true,"fileName":true,"minify":true,"namespace":"","transpileTemplateLiterals":true,"topLevelImportPaths":[],"pure":false,"disableVendorPrefixes":false},
+    }]
 /* global plugins */
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [
