@@ -111,5 +111,10 @@ h3{
 
     .navItems{
         display: none;
+        flex-direction: column;
+    }
+
+    .navItemsOpen{
+        flex-direction: column;
     }
 }

@@ -6,6 +6,12 @@
     background-image: url('../assets/images/building-upwardview.jpg');
     background-size: cover;
     background-position: center;
+    display: flex;
+}
+
+.causesLanding > h2{
+    font-size: clamp(3rem, 4rem, 5rem);
+    margin: auto;
 }
 
 .list{
@@ -16,4 +22,16 @@
 
 .cause{
     margin: auto;
+    min-height: 25vh;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.causeLink{
+    color: pink;
+    text-decoration: none;
+    vertical-align: middle;
 }

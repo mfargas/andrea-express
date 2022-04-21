@@ -28,7 +28,7 @@ const BurgerButton = styled(GiHamburgerMenu)`
 
 const Navigation = styled.div.attrs(props => ({
     type: 'text',
-    display: props.open ? 'block' : 'none',
+    display: props.open ? 'flex' : 'none',
 }))`
     display: ${props => props.display};
 
