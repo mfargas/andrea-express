@@ -11,7 +11,7 @@ const Footer = () => {
                 <ul className={styles.footerLinks}>
                     <li className={styles.footerLinkItem}>
                         <Link to="/" className={styles.footerLogo}>
-                            <StaticImage className={styles.logo} src='../assets/images/andrea-logo.png' alt="small logo"/>
+                            <StaticImage className={styles.logo} src='../images/andrea-logo.png' alt="small logo"/>
                         </Link>
                     </li>
                     <li className={styles.footerLinkItem}><Link to="/about" className={styles.footerLinkText}>About</Link></li>

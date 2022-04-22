@@ -11,7 +11,7 @@ const HomeIntro = () => {
             </div>
             <div className={styles.bio}>
                 <h2>legal attorney's assistant</h2>
-                <StaticImage src='../assets/images/andrea-congress.png' alt="andrea at the capitol"/>
+                <StaticImage src='../images/andrea-congress.png' alt="andrea at the capitol"/>
                 <RiAmazonFill />
             </div>
         </div>

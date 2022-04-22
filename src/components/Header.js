@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Link } from 'gatsby'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import NavLinks from './NavLinks'
-import Logo from '../assets/images/andrea-logo.png'
+import Logo from '../images/andrea-logo.png'
 import styled from 'styled-components'
 import * as styles from "../stylesheets/layout.module.css"
 import { Button } from 'aws-amplify-react'

@@ -4,7 +4,7 @@ import * as styles from '../stylesheets/homeIntro.module.css'
 
 const Profile = () => {
     return <StaticImage 
-        src="../assets/images/andrea-congress.png" 
+        src="../images/andrea-congress.png" 
         alt="andrea profile picture"
         layout="constrained"
         placeholder="blurred"

@@ -11,7 +11,7 @@
     width: 100%;
     background-color: white;
     background-repeat: no-repeat;
-    background-image: url(../assets/images/esperanza-logo.jpeg);
+    background-image: url(../images/esperanza-logo.jpeg);
     background-size: contain;
     background-position: center center;
 }
@@ -19,21 +19,21 @@
 .gallery__item_2{
     width: 100%;
     content-visibility: cover;
-    background-image: url(../assets/images/hrf-org-logo.svg);
+    background-image: url(../images/hrf-org-logo.svg);
     background-size: cover;
     background-position: center bottom;
 }
 
 .gallery__item_3{
     width: 100%;
-    background-image: url(../assets/images/carecen-logo.svg);
+    background-image: url(../images/carecen-logo.svg);
     background-size: cover;
     background-position: center center;
 }
 
 .gallery__item_4{
     width: 100%;
-    background-image: url(../assets/images/lb-logo.png);
+    background-image: url(../images/lb-logo.png);
     background-size: cover;
     background-color: hsl(36, 100%, 90%);
     background-position: center center;

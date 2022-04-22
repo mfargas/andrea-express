@@ -3,7 +3,7 @@
     height: 80vh;
     background-color: rgb(58, 52, 52);
     background-blend-mode: screen;
-    background-image: url('../assets/images/building-upwardview.jpg');
+    background-image: url('../images/building-upwardview.jpg');
     background-size: cover;
     background-position: center;
     display: flex;

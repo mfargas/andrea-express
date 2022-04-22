@@ -7,7 +7,7 @@ const Biography = () => {
     return (
         <section className={styles.aboutLanding}>
             <StaticImage 
-                src='../assets/images/andrea-congress.png'
+                src='../images/andrea-congress.png'
                 alt="andrea-profile" 
                 className={styles.profileImage} 
             />

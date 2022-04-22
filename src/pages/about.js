@@ -16,7 +16,7 @@ export default function About({ data }) {
             <section className={styles.landing}>
                 <h1>About Andrea</h1>
                 <StaticImage 
-                    src='../assets/images/justice-statue.jpg'
+                    src='../images/justice-statue.jpg'
                     alt='Statue of woman holding scale'
                     layout='constrained'
                     className={styles.statue}
